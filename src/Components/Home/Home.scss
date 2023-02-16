@@ -1,0 +1,89 @@
+.banner{
+    background-color: #151515;
+    height: 700px;
+    background-size: 40% 700px;
+    background-position: right;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1,h4 {
+        font-weight: 500;
+        font-size: 4rem;
+        color: #fff;
+        max-width: 50%;
+        z-index: 10;
+    }
+    h4{
+        font-size: 2rem;
+        letter-spacing: 5;
+    }
+    &::after{
+        z-index: -10;
+        content: "";
+        background-color: #151515;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        opacity: .4;
+    }
+    .Buttons{z-index: 10;
+        margin: 10px;
+        // border: 1px solid red;
+        width: 100%;
+    }
+   button{
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 10px;
+    background-color: #fff;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    color: #151515;
+   }
+}
+.rows{
+  
+    background-color: #151515;
+    color: #fff;
+    h2{
+        z-index: 10;
+        font-weight: 100;
+    }
+    >div{
+        display: flex;
+        padding: 10px;
+        overflow-x: auto;
+    }
+    .card{
+        z-index: 10;
+        cursor: pointer;
+       margin: 20px;
+        width: 250px;
+        height: 350px;
+        transition: .5s;
+        &:hover{
+            transform: translateY(-10px) scale(1.1);
+        }
+    }
+}
+
+.genreBox{
+    overflow-x: auto;
+    display: flex;
+    text-align: center;
+    background-color: #151515;
+  
+    a{
+        margin: 1rem;
+        padding: 1rem 0;
+        text-decoration: none;
+        color: black;
+        background-color: #fff;
+        border-radius: 20px;
+        min-width: 10rem;
+    }
+   
+}
